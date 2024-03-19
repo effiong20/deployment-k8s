@@ -2,6 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  namespace: tetris1
   name: tetris
 spec:
   replicas: 3
@@ -23,6 +24,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
+  namespace: tetris1
   name: tetris-service
 spec:
   selector:
